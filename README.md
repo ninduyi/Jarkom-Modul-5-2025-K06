@@ -21,3 +21,7 @@
 
 ## Pembagian IP - VLSM
 ![](assets/ip.png)
+
+## Misi 1
+
+## Misi 2

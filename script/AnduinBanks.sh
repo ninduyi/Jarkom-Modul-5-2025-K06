@@ -16,3 +16,17 @@ iface eth1 inet static
 	netmask 255.255.255.128
 
 
+# ======= Misi 1.4 ========
+#!/bin/bash
+echo "nameserver 192.168.122.1" > /etc/resolv.conf
+sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
+sysctl -p
+
+apt-get update && apt-get install isc-dhcp-relay -y
+
+echo 'SERVERS="192.168.0.42"' > /etc/default/isc-dhcp-relay
+echo 'INTERFACES="eth0 eth1"' >> /etc/default/isc-dhcp-relay
+
+service isc-dhcp-relay restart
+echo "Konfigurasi AnduinBanks Selesai."
+
