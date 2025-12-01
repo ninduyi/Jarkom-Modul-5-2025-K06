@@ -24,6 +24,7 @@
 ![](assets//tree-vlsm_mod5.png)
 
 ## Pembagian IP - VLSM
+Berikut adalah pembagian IP Address menggunakan metode VLSM (Variable Length Subnet Mask):  
 ![](assets/ip.png)
 
 ![](assets/1.4.png)
