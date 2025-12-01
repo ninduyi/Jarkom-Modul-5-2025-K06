@@ -8,6 +8,10 @@
 
 ---
 
+
+
+# Misi 1
+
 ## Topologi 
 ![](assets/topologi_mod5.png)
 
@@ -22,6 +26,32 @@
 ## Pembagian IP - VLSM
 ![](assets/ip.png)
 
-## Misi 1
+![](assets/1.4.png)
+# Misi 2
+![](assets/2.2-toVilya.png)
 
-## Misi 2
+![](assets/2.3-.png)
+
+![](assets/2-3_gagal.png)
+
+![](assets/2.4.png)
+
+![](assets/2.5_elfCirdan.png)
+
+![](assets/2.5_manusiaIsildur.png)
+
+![](assets/2.6-terblokir.png)
+
+![](assets/2.6-log.png)
+
+![](assets/2.7.png)
+
+![](assets/2.8.png)
+
+# Misi 3
+
+Blokir semua lalu lintas masuk dan keluar dari Khamul.
+
+![](assets/3-ping.png)
+
+![](assets/3-drop.png)
