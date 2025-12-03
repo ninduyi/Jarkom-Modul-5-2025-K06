@@ -28,6 +28,10 @@ Berikut adalah pembagian IP Address menggunakan metode VLSM (Variable Length Sub
 
 ![](assets/ip.png)
 
+**Misi 1.3**
+![WhatsApp Image 2025-12-03 at 23 01 18_d73437e8](https://github.com/user-attachments/assets/4bb30716-de24-4117-9589-617bbeeeb041)
+
+
 Berikut di bawah ini adalah hasil pengujian konektivitas dan akses layanan dari node Client Isildur menuju Web Server Palantir dan IronHills. Pengujian ini membuktikan bahwa konfigurasi Routing, DNS, dan Web Server telah berjalan dengan sukses.  
 **Misi 1.4**  
 ![](assets/1.4.png)
