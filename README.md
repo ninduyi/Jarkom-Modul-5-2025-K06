@@ -35,8 +35,10 @@ Pada perintah ping ironhills.k06.com, terlihat output (192.168.0.22). Kemudian, 
 
 # Misi 2
 ![](assets/2.2-toVilya.png)
+Gambar di atas menunjukkan bukti keberhasilan mekanisme pengamanan pada node Vilya, di mana pengujian ping dari client Isildur menuju IP 192.168.0.42 menghasilkan status 100% packet loss. Kegagalan respons ini bukan disebabkan oleh gangguan konektivitas jaringan, melainkan akibat penerapan aturan firewall iptables yang secara spesifik membuang (DROP) setiap paket ICMP Echo Request yang masuk dari pihak luar. Dengan demikian, konfigurasi ini telah berhasil memenuhi syarat keamanan untuk melindungi data vital server dari upaya pemindaian (scanning), menjadikan Vilya tidak terdeteksi oleh perangkat lain namun tetap dapat menjalankan fungsinya sebagai DHCP Server secara normal.  
 
 ![](assets/2.3-.png)
+
 
 ![](assets/2-3_gagal.png)
 
