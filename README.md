@@ -44,11 +44,10 @@ Gambar di atas memperlihatkan pengujian konektivitas menggunakan netcat (nc) dar
 Sedangkan dari Palantir, tidak adanya respon sukses (koneksi menggantung/timeout) membuktikan bahwa aturan iptables -A INPUT -p udp --dport 53 -j DROP berhasil memblokir akses dari node selain Vilya, sesuai dengan skenario pengamanan yang diminta.
 
 ![](assets/2.4.png)  
-
+Client Durin berhasil mengakses Web Server IronHills pada hari Sabtu (Akhir Pekan), lalu gagal pada percobaan lain (kemungkinan saat waktu diset ke hari kerja), membuktikan aturan blokir waktu di IronHills berfungsi.
 
 ![](assets/2.5_elfCirdan.png)  
-
-
+Client Cirdan berhasil mengakses Palantir pada request pertama, namun request kedua langsung gagal (Connection refused), membuktikan bahwa Firewall Anti-DDoS (limit 5 req/detik) bekerja dengan memblokir request berlebih.
 ![](assets/2.5_manusiaIsildur.png)
 Isildur berhasil mendapatkan respon HTTP/1.1 200 OK saat mengakses palantir.k06.com, membuktikan DNS Narya dan Web Server Palantir berjalan normal dan dapat diakses oleh client Faksi Manusia.
 
