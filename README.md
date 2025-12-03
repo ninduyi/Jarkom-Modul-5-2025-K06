@@ -34,7 +34,7 @@ Berikut di bawah ini adalah hasil pengujian konektivitas dan akses layanan dari 
 Pada perintah ping ironhills.k06.com, terlihat output (192.168.0.22). Kemudian, pada perintah ping palantir.k06.com, terlihat output (192.168.0.14). Hal ini membuktikan bahwa konfigurasi Bind9 di Narya berfungsi dengan benar. Isildur berhasil bertanya ke Narya mengenai IP dari domain k06.com, dan Narya berhasil menjawab dengan IP yang tepat sesuai konfigurasi Zone File (db.k06).
 
 # Misi 2
-**Misi 2.1**
+**Misi 2.1**  
 <img width="882" height="284" alt="image" src="https://github.com/user-attachments/assets/dbccbd2b-277d-4679-9a6c-2c188588fe1b" />
 
 
