@@ -40,15 +40,17 @@ Gambar di atas menunjukkan bukti keberhasilan mekanisme pengamanan pada node Vil
 ![](assets/2.3-.png)  
 Gambar di atas memperlihatkan pengujian konektivitas menggunakan netcat (nc) dari node Vilya menuju Narya (192.168.0.43) pada port DNS (53/UDP). Output Connection to ... succeeded! membuktikan bahwa firewall di Narya menerima paket dari Vilya. Hal ini memverifikasi bahwa aturan iptables -A INPUT -s 192.168.0.42 ... -j ACCEPT telah berfungsi dengan benar, memberikan hak akses eksklusif kepada Vilya untuk menggunakan layanan DNS.
 
-![](assets/2-3_gagal.png)
+![](assets/2-3_gagal.png)  
 Sedangkan dari Palantir, tidak adanya respon sukses (koneksi menggantung/timeout) membuktikan bahwa aturan iptables -A INPUT -p udp --dport 53 -j DROP berhasil memblokir akses dari node selain Vilya, sesuai dengan skenario pengamanan yang diminta.
 
-![](assets/2.4.png)
+![](assets/2.4.png)  
+Isildur berhasil mendapatkan respon HTTP/1.1 200 OK saat mengakses palantir.k06.com, membuktikan DNS Narya dan Web Server Palantir berjalan normal dan dapat diakses oleh client Faksi Manusia.
 
-
-![](assets/2.5_elfCirdan.png)
+![](assets/2.5_elfCirdan.png)  
+Menunjukkan pengujian akses Web Server IronHills dari client Durin (Kurcaci) pada hari Rabu (Weekday). Hasilnya adalah curl: (7) ... Connection refused, yang membuktikan bahwa Firewall Waktu di IronHills berhasil memblokir akses di luar akhir pekan (Sabtu-Minggu), sesuai dengan skenario keamanan.
 
 ![](assets/2.5_manusiaIsildur.png)
+Output succeeded! membuktikan bahwa firewall di Narya mengizinkan (accept) koneksi dari Vilya, sesuai dengan aturan isolasi DNS yang hanya memperbolehkan Vilya untuk mengaksesnya.
 
 ![](assets/2.6-terblokir.png)
 
