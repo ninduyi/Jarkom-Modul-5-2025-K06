@@ -65,8 +65,9 @@ Misi 2.6 (Logging Paket Dropped). Ini menunjukkan bahwa mekanisme audit keamanan
 ![](assets/2.7.png)
 Konfigurasi iptables menggunakan modul recent telah berhasil. Server mengizinkan 5 request pertama dalam satu detik, dan secara otomatis memblokir (DROP) sisa request yang melebihi batas tersebut untuk mencegah serangan DDoS.
 
-**Misi 2.8**
+**Misi 2.8**  
 ![](assets/2.8.png)
+Pengujian menggunakan netcat (nc) dilakukan untuk memastikan port 80 (HTTP) pada node target dalam keadaan terbuka (LISTEN) dan dapat dijangkau dari jaringan server. Output succeeded! menandakan layanan Web Server berjalan normal.
 
 # Misi 3
 
