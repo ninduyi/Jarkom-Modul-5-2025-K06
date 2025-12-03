@@ -54,6 +54,7 @@ Isildur berhasil mendapatkan respon HTTP/1.1 200 OK saat mengakses palantir.k06.
 ![](assets/2.6-terblokir.png)
 Gambar ini membuktikan bahwa meskipun akses ICMP (Ping) mungkin diblokir oleh firewall atau kebijakan jaringan (terlihat dari packet loss), Layanan Web (Port 80) tetap berfungsi normal dan terbuka (terlihat dari hasil Nmap). Ini memvalidasi bahwa konfigurasi Web Server di Palantir sudah berjalan dan bisa dijangkau oleh client.
 ![](assets/2.6-log.png)
+Misi 2.6 (Logging Paket Dropped). Ini menunjukkan bahwa mekanisme audit keamanan berjalan: paket ilegal tidak hanya diblokir, tetapi juga direkam jejaknya untuk keperluan analisis admin.
 
 ![](assets/2.7.png)
 
