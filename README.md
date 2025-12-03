@@ -52,7 +52,7 @@ Client Cirdan berhasil mengakses Palantir pada request pertama, namun request ke
 Isildur berhasil mendapatkan respon HTTP/1.1 200 OK saat mengakses palantir.k06.com, membuktikan DNS Narya dan Web Server Palantir berjalan normal dan dapat diakses oleh client Faksi Manusia.
 
 ![](assets/2.6-terblokir.png)
-
+Gambar ini membuktikan bahwa meskipun akses ICMP (Ping) mungkin diblokir oleh firewall atau kebijakan jaringan (terlihat dari packet loss), Layanan Web (Port 80) tetap berfungsi normal dan terbuka (terlihat dari hasil Nmap). Ini memvalidasi bahwa konfigurasi Web Server di Palantir sudah berjalan dan bisa dijangkau oleh client.
 ![](assets/2.6-log.png)
 
 ![](assets/2.7.png)
