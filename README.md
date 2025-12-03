@@ -63,6 +63,7 @@ Misi 2.6 (Logging Paket Dropped). Ini menunjukkan bahwa mekanisme audit keamanan
 
 **Misi 2.7**
 ![](assets/2.7.png)
+Konfigurasi iptables menggunakan modul recent telah berhasil. Server mengizinkan 5 request pertama dalam satu detik, dan secara otomatis memblokir (DROP) sisa request yang melebihi batas tersebut untuk mencegah serangan DDoS.
 
 **Misi 2.8**
 ![](assets/2.8.png)
