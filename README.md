@@ -28,7 +28,7 @@ Berikut adalah pembagian IP Address menggunakan metode VLSM (Variable Length Sub
 
 ![](assets/ip.png)
 
-Berikut di bawah ini adalah hasil pengujian konektivitas dan akses layanan dari node Client Isildur menuju Web Server Palantir dan IronHills. Pengujian ini membuktikan bahwa konfigurasi Routing, DNS, dan Web Server telah berjalan dengan sukses. 
+Berikut di bawah ini adalah hasil pengujian konektivitas dan akses layanan dari node Client Isildur menuju Web Server Palantir dan IronHills. Pengujian ini membuktikan bahwa konfigurasi Routing, DNS, dan Web Server telah berjalan dengan sukses.  
 **Misi 1.4**  
 ![](assets/1.4.png)
 Pada perintah ping ironhills.k06.com, terlihat output (192.168.0.22). Kemudian, pada perintah ping palantir.k06.com, terlihat output (192.168.0.14). Hal ini membuktikan bahwa konfigurasi Bind9 di Narya berfungsi dengan benar. Isildur berhasil bertanya ke Narya mengenai IP dari domain k06.com, dan Narya berhasil menjawab dengan IP yang tepat sesuai konfigurasi Zone File (db.k06).
